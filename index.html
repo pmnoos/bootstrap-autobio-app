@@ -5,33 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Story of an Ordinary Man</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
-
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-<!-- Header Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Autobiography</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#chapter-1">Chapters</a></li>
-        <li class="nav-item"><a class="nav-link" href="#footer">About</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 <div class="container-fluid">
   <div class="row">
     <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar py-4">
       <div class="position-sticky">
         <h4 class="px-3">Chapters</h4>
-        <ul class="nav flex-column px-3" id="sidebar-chapters"></ul>
+        <ul class="nav flex-column px-3">
+          <li class="nav-item"><a class="nav-link chapter-link" data-target="chapter-1" href="#">Chapter 1</a></li>
+          <li class="nav-item"><a class="nav-link chapter-link" data-target="chapter-2" href="#">Chapter 2</a></li>
+          <li class="nav-item"><a class="nav-link chapter-link" data-target="chapter-3" href="#">Chapter 3</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -41,15 +27,45 @@
         <p class="text-muted">“Through the simplicity of my existence, I unearthed the profound truth that to love and to be loved is the greatest adventure of all...”</p>
       </section>
 
-      <div id="chapter-sections"></div>
+      <section id="chapter-1" class="chapter-section mb-5">
+        <h2>Chapter 1: Beginnings</h2>
+        <h5 class="text-secondary">A First Glimpse of Life</h5>
+        <img src="assets/banner1.jpg" class="img-fluid rounded mb-3" alt="Banner 1">
+        <p>Content for Chapter 1 goes here...</p>
+      </section>
 
-      <!-- Footer -->
-      <footer id="footer" class="footer mt-5 py-4 bg-dark text-light text-center rounded">
-        <div class="container">
-          <p class="mb-1">&copy; 2025 The Story of an Ordinary Man</p>
-          <p class="mb-0">Created by [Your Name] | Powered by Bootstrap</p>
-        </div>
-      </footer>
+      <section id="chapter-2" class="chapter-section mb-5 d-none">
+        <h2>Chapter 2: Family Roots</h2>
+        <h5 class="text-secondary">Memories of Home</h5>
+        <img src="assets/banner2.jpg" class="img-fluid rounded mb-3" alt="Banner 2">
+        <p>Content for Chapter 2 goes here...</p>
+      </section>
+
+      <section id="chapter-3" class="chapter-section mb-5 d-none">
+        <h2>Chapter 3: Early School Days</h2>
+        <h5 class="text-secondary">Lessons and Laughter</h5>
+        <img src="assets/banner3.jpg" class="img-fluid rounded mb-3" alt="Banner 3">
+        <p>Content for Chapter 3 goes here...</p>
+      </section>
+
+      <section class="bg-light p-4 rounded mb-4">
+        <h4>How to Add or Edit Chapters</h4>
+        <ol>
+          <li>Open <code>index.html</code> in a text editor.</li>
+          <li>Copy a <code>&lt;section&gt;</code> block and change the ID, title, subtitle, image, and paragraph.</li>
+          <li>Add a link in the sidebar with <code>data-target</code> matching the section ID.</li>
+          <li>Add your images into the <code>assets/</code> folder.</li>
+        </ol>
+      </section>
+
+      <section class="bg-warning-subtle p-4 rounded">
+        <h4>💡 Bonus Idea: Share the Gift of Storytelling</h4>
+        <p>Whether you've always wanted to document your journey, reflect on your experiences, or leave a legacy for loved ones — this tool makes it easier than ever.</p>
+        <p>Take a look and give it a try. And if you know anyone — friends, colleagues, or neighbours — who might be interested, feel free to share the link:</p>
+        <p><strong>👉 <a href="https://payhip.com/b/NdZ7o" target="_blank">https://payhip.com/b/NdZ7o</a></strong></p>
+        <p><strong>Bonus idea</strong>: Why not offer it to a senior relative — your grandparents, aunt, uncle, or someone you admire — and help write their story? It’s a thoughtful gift and a beautiful way to preserve their legacy.</p>
+      </section>
+
     </main>
   </div>
 </div>
@@ -57,3 +73,4 @@
 <script src="js/scripts.js"></script>
 </body>
 </html>
+```
